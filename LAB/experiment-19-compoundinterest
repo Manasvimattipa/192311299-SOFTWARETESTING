@@ -1,0 +1,28 @@
+package experiments;
+
+public class exp19_compoundinterest {
+	 public static String calculateCompoundInterest(
+	            String p, String r, String t) {
+
+	        try {
+	            double principal = Double.parseDouble(p);
+	            double rate = Double.parseDouble(r);
+	            int time = Integer.parseInt(t);
+
+	            if (principal < 0 || rate < 0 || time < 0) {
+	                return "invalid input";
+	            }
+
+	            double amount = principal *
+	                    Math.pow((1 + rate / 100), time);
+
+	            double ci = amount - principal;
+
+	            return String.valueOf(ci);
+
+	        } catch (NumberFormatException e) {
+	            return "invalid input";
+	        }
+	 }
+
+}
