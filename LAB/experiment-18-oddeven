@@ -1,0 +1,25 @@
+package experiments;
+
+public class exp18_oddeven {
+	
+	public static String fun(String num) {
+		
+		try {
+			
+			int n =Integer.parseInt(num);
+		if((n&1)==0) {
+			return "even";
+		}
+		else {
+			return "odd";
+		}
+		}
+		
+		
+		 catch (NumberFormatException e) {
+	            return "invalid input";
+	        }
+	}
+	
+
+}
