@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ARMS Login</title>
+</head>
+<body>
+
+    <h2>ARMS Student Login</h2>
+
+    <label>Username:</label>
+    <input type="text" id="txtusername"><br><br>
+
+    <label>Password:</label>
+    <input type="password" id="txtpassword"><br><br>
+
+    <button id="btnlogin" onclick="checkLogin()">Login</button>
+
+    <p id="message"></p>
+
+    <script>
+        function checkLogin() {
+			    let username = document.getElementById("txtusername").value;
+			    let password = document.getElementById("txtpassword").value;
+
+			    if (username === "admin" && password === "admin123") {
+			        document.getElementById("message").innerHTML = "Login Successful";
+			    } else {
+			        document.getElementById("message").innerHTML =
+			            "Invalid username or password";
+			    }
+			}
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Portal</title>
+</head>
+<body>
+
+    <h2 id="message">Welcome! You are logged in.</h2>
+
+    <button id="logout" onclick="logout()">Logout</button>
+
+    <script>
+        function logout() {
+            document.getElementById("message").innerHTML =
+                "Login Page Displayed";
+
+            document.getElementById("logout").style.display = "none";
+        }
+    </script>
+
+</body>
+</html>
